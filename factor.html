@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Factores Xtralinea</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/factor.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/factor.css">
+
+</head>
+
+<body>
+	<div class="contenedor">
+		<figure>
+			<img class="image" src="./images/logo.png" alt="">
+		</figure>
+		<ul id="pestanas">
+			<li id="tab1"><a href="#xtra">X-tralinea</a></li>
+			<li id="tab2"><a href="#efec">Tc Efectivo</a></li>
+		</ul>
+		
+		<div class="ventanas">
+			<div class="xtra" id="xtra" >
+					<p class="c">Cuotas</p>
+					<select name="cuota" id="cuota">
+						<option value="0">3 Cuotas</option>
+						<option value="1">6 Cuotas</option>
+						<option value="2">12 Cuotas</option>
+						<option value="3">18 Cuotas</option>
+						<option value="4">24 Cuotas</option>
+						<option value="5">30 Cuotas</option>
+						<option value="6">36 Cuotas</option>
+						<option value="7">38 Cuotas</option>
+						<option value="8">42 Cuotas</option>
+						<option value="9">48 Cuotas</option>
+					</select>
+					<p class="i">Interes</p>
+					<select name="interes" id="interes">
+						<option value="0">12.99 %</option>
+						<option value="1">18.02 %</option>
+						<option value="2">19.99 %</option>
+						<option value="3">20.84 %</option>
+						<option value="4">24.99 %</option>
+						<option value="5">26.68 %</option>
+						<option value="6">34.33 %</option>
+						<option value="7">34.99 %</option>
+						<option value="8">42.41 %</option>
+						<option value="9">45.76 %</option>
+						<option value="10">50.93 %</option>
+					</select>
+					
+					<p class="v">Ingresa Valor S/.</p>
+					<input type="text" name="nvalor" value="" class="ivalor" placeholder="0">
+					<button type="button" value="vcalcular" id="icalcular">Calcular</button>
+					<button type="button" value="borrar" id="iborrar">Borrar</button>
+					
+					<p id="ci">0.00</p>
+			</div>
+			<div class="efec" id="efec" >
+					<p class="c">Cuotas</p>
+
+					<p class="i">Tipo tarjeta</p>
+					<select name="tc" id="tc">
+						<option value="0">Clasica</option>
+						<option value="1">Oro</option>
+						<option value="2">Platinum</option>
+						<option value="3">Siganture</option>
+						<option value="4">Black</option>
+						<option value="5">AAvantage® Silver</option>
+						<option value="6">AAvantage® Gold</option>
+						<option value="7">AAvantage® Platinum</option>
+						<option value="8">AAvantage® Infiniti</option>
+						<option value="9">AAvantage® Black</option>
+						<option value="10">Jockey Clasica</option>
+						<option value="11">Jockey Platinum</option>
+					</select>
+					
+					<p class="v">Ingresa Valor S/.</p>
+					<input type="text" name="nvalor2" value="" class="ivalor2" placeholder="0">
+					<input type="text" name="ncuota" value="" class="vcuota" placeholder="0">
+					<button type="button" value="vcalcular" id="icalcular2">Calcular</button>
+					<button type="button" value="borrar" id="iborrar2">Borrar</button>
+					
+					<p id="ci2">0.00</p>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
