@@ -165,3 +165,17 @@ ul#pestanas li a{
   top: 180px;
 }
 
+
+.index{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.index h1, img {
+  text-align: center;
+
+}
