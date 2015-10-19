@@ -57,6 +57,14 @@ $(document).on('ready', function(){ //cuando el documento este listo
 		var c_valor = parseFloat($("input:text[name=nvalor2]").val());
 		var c_cuota = parseFloat($("input:text[name=ncuota]").val());
 
+		if (c_cuota >= 2 && c_cuota <=36){
+			c_cuota
+		}
+		else{
+			alert("Debes elegir entre 2 a 36 Cuotas Gracias :)");
+			return;
+		};
+
 
 		var tem_tc = (Math.pow((1+tea_tc[z]), (1/12)))-1;
 
