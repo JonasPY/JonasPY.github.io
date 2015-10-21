@@ -91,17 +91,17 @@ $(document).on('ready', function(){ //cuando el documento este listo
 
     $('#tab1').click(function(){
         $('#efec').fadeOut(function(){
-            $('#tab2').css({'background-color': '#C1C1C1'});
-            $('#tab1').css({'background-color': '#ED001D'});
+            $('#tab2').css({'background': '#C1C1C1'});
+            $('#tab1').css({'background': '#ED001D'});
             $('#xtra').fadeIn();
         });    
     });
 
     $('#tab2').click(function(){
         $('#xtra').fadeOut(function() {
-            $('#tab1').css({'background-color': '#C1C1C1'});
+            $('#tab1').css({'background': '#C1C1C1'});
             $('#efec').fadeIn();
-            $('#tab2').css({'background-color': '#ED001D'});
+            $('#tab2').css({'background': '#ED001D'});
         });                   
     });     
 });
