@@ -58,7 +58,7 @@ $(document).on('ready', function(){ //cuando el documento este listo
 		var c_cuota = parseFloat($("input:text[name=ncuota]").val());
 
 		if (c_cuota >= 2 && c_cuota <=36){
-			c_cuota
+			c_cuota;
 		}
 		else{
 			alert("Debes elegir entre 2 a 36 Cuotas Gracias :)");
@@ -87,7 +87,7 @@ $(document).on('ready', function(){ //cuando el documento este listo
 	// ***********************************************************
 
 	$('#efec').hide();
-	$('#tab1').css({'background-color': 'rgba(237, 0, 29, 0.86)'});
+	$('#tab1').css({'background': '#ED001D'});
 
     $('#tab1').click(function(){
         $('#efec').fadeOut(function(){
