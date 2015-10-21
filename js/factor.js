@@ -92,7 +92,7 @@ $(document).on('ready', function(){ //cuando el documento este listo
     $('#tab1').click(function(){
         $('#efec').fadeOut(function(){
             $('#tab2').css({'background-color': '#C1C1C1'});
-            $('#tab1').css({'background-color': 'rgba(237, 0, 29, 0.86)'});
+            $('#tab1').css({'background-color': '#ED001D'});
             $('#xtra').fadeIn();
         });    
     });
@@ -101,7 +101,7 @@ $(document).on('ready', function(){ //cuando el documento este listo
         $('#xtra').fadeOut(function() {
             $('#tab1').css({'background-color': '#C1C1C1'});
             $('#efec').fadeIn();
-            $('#tab2').css({'background-color': 'rgba(237, 0, 29, 0.86)'});
+            $('#tab2').css({'background-color': '#ED001D'});
         });                   
     });     
 });
