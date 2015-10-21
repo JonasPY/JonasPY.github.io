@@ -93,14 +93,14 @@ $(document).on('ready', function(){ //cuando el documento este listo
         $('#efec').fadeOut(function(){
             $('#tab2').css({'background': '#C1C1C1'});
             $('#tab1').css({'background': '#ED001D'});
-            $('#xtra').fadeIn();
+            $('#xtra').fadeIn("slow");
         });    
     });
 
     $('#tab2').click(function(){
         $('#xtra').fadeOut(function() {
             $('#tab1').css({'background': '#C1C1C1'});
-            $('#efec').fadeIn();
+            $('#efec').fadeIn("slow");
             $('#tab2').css({'background': '#ED001D'});
         });                   
     });     
