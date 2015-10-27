@@ -1,3 +1,6 @@
+body { 
+  text-align:center; 
+}
 select{
 	background: #FFFFFF;
   font-size: 16px;
@@ -167,15 +170,6 @@ ul#pestanas li a{
 
 
 .index{
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
   width: 400px;
-  margin: 0 auto;
-}
-
-.index h1, img {
-  text-align: center;
-
+  margin: 0 auto 0 auto;
 }
