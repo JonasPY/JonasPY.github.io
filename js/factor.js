@@ -28,8 +28,6 @@ $(document).on('ready', function(){ //cuando el documento este listo
 
 		var valor = z * posicion;
 
-		// console.log(valor);
-		// ci.innerText = valor.toFixed(2);	
 		$('#ci').text(valor.toFixed(2));	
 	});	
 
@@ -81,6 +79,11 @@ $(document).on('ready', function(){ //cuando el documento este listo
 		});
 	});
 
+	//Pop-UP Index
+	$('#popup').click(function(e){
+		e.preventDefault();
+		window.open('factor.html','_blank','width=450,height=410,menubar=no,scrollbars=no,toolbar=no,location=no,directories=no,resizable=no,titlebar=no');
+	});
 	
 
 	// Efecto TABS
@@ -91,7 +94,7 @@ $(document).on('ready', function(){ //cuando el documento este listo
 
     $('#tab1').click(function(){
         $('#efec').fadeOut(function(){
-            $('#tab2').css({'background': '#C1C1C1'});
+            $('#tab2').css({'background': '#CCCCCC'});
             $('#tab1').css({'background': '#ED001D'});
             $('#xtra').fadeIn("slow");
         });    
@@ -99,12 +102,15 @@ $(document).on('ready', function(){ //cuando el documento este listo
 
     $('#tab2').click(function(){
         $('#xtra').fadeOut(function() {
-            $('#tab1').css({'background': '#C1C1C1'});
+            $('#tab1').css({'background': '#CCCCCC'});
             $('#efec').fadeIn("slow");
             $('#tab2').css({'background': '#ED001D'});
         });                   
     });     
 });
+
+
+
 
 
 

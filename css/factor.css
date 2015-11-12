@@ -1,5 +1,8 @@
-body { 
-  text-align:center; 
+body {
+    text-align:center;
+}
+.body { 
+  background-color: #E6E6E6;
 }
 select{
 	background: #FFFFFF;
@@ -13,8 +16,8 @@ select:hover{
 	background-color: #ddd;
 }
 button {
-  background-color: #ED001D;
-  border: 1px solid #FF0000;
+  background: #ED001D;
+  border: 1px solid #ED001D;
   border-bottom: 1px solid #660000;
   border-radius: 3px;
   color: white;
@@ -23,6 +26,7 @@ button {
   height: 41px;
   width: 100px;
   position: absolute;
+  text-transform: uppercase;
 
 }
 button:hover {
@@ -40,7 +44,7 @@ div{
   position: relative;
   width: 443px;
   height: 397px;
-  background-color: #E6E6E6;
+
 }
 
 div.contenedor .ventanas{
@@ -75,16 +79,12 @@ ul#pestanas li{
   padding-right: 8px;
   list-style: none;
 }
-ul#pestanas a.actual{
-  background-color: #333333;
-
-}
 ul#pestanas li a{
   display: block;
   .display: inline-block;
   font-size: 18px;
   text-decoration: none;
-  color: #000;
+  color: black;
 }
 
 .contenedor input{
@@ -170,6 +170,7 @@ ul#pestanas li a{
 
 
 .index{
-  width: 400px;
+  width: 100%;
   margin: 0 auto 0 auto;
+  font-family: "Arial";
 }
