@@ -90,21 +90,21 @@ $(document).on('ready', function(){ //cuando el documento este listo
 	// ***********************************************************
 
 	$('#efec').hide();
-	$('#tab1').css({'background': '#ED001D'});
+	$('#tab2').css({'background': '#ED001D'});
 
     $('#tab1').click(function(){
         $('#efec').fadeOut(function(){
-            $('#tab2').css({'background': '#CCCCCC'});
-            $('#tab1').css({'background': '#ED001D'});
+            $('#tab1').css({'background': '#CCCCCC'});
+            $('#tab2').css({'background': '#ED001D'});
             $('#xtra').fadeIn("slow");
         });    
     });
 
     $('#tab2').click(function(){
         $('#xtra').fadeOut(function() {
-            $('#tab1').css({'background': '#CCCCCC'});
+            $('#tab2').css({'background': '#CCCCCC'});
             $('#efec').fadeIn("slow");
-            $('#tab2').css({'background': '#ED001D'});
+            $('#tab1').css({'background': '#ED001D'});
         });                   
     });     
 });
