@@ -19,21 +19,21 @@ $(document).on('ready', function(){ //cuando el documento este listo
 	// Calculando Xtralinea
 	// ***********************************************************
 
-	$("#icalcular").click(function () {
+	function valor() {
 		var x = $("#cuota")[0].selectedIndex;
 		var y = $("#interes")[0].selectedIndex;
 		var z = $("input:text[name=nvalor]").val();
 
 		var posicion = tea[x][y];
-
 		var valor = z * posicion;
+		$('.ci').text(valor.toFixed(2));
+	}
 
-		$('#ci').text(valor.toFixed(2));	
-	});	
+	$("#icalcular").click(function() { valor(); return false; });	
 
 	$("#iborrar").click(function(){
-		$('#ci').text("0.00");
-		$("input:text[name=nvalor]").val("0");
+		$('.ci').text("0.00");
+		$("input:text[name=nvalor]").val("");
 	});
 
 
@@ -63,21 +63,18 @@ $(document).on('ready', function(){ //cuando el documento este listo
 			return;
 		};
 
-
 		var tem_tc = (Math.pow((1+tea_tc[z]), (1/12)))-1;
-
 		var factor = tem_tc*(Math.pow((1+tem_tc),c_cuota)) / ((Math.pow((1+tem_tc),c_cuota))-1)
-
 		var can = factor * c_valor;
 
 		$('#ci2').text(can.toFixed(2));
-		
 		$("#iborrar2").click(function(){
-			$('#ci2').text("0.00");
-			$("input:text[name=ncuota]").val("0");
-			$("input:text[name=nvalor2]").val("0");
+			$('#ci2').text("");
+			$("input:text[name=ncuota]").val("");
+			$("input:text[name=nvalor2]").val("");
 		});
 	});
+
 
 	//Pop-UP Index
 	$('#popup').click(function(e){
@@ -85,28 +82,52 @@ $(document).on('ready', function(){ //cuando el documento este listo
 		window.open('factor.html','_blank','width=450,height=410,menubar=no,scrollbars=no,toolbar=no,location=no,directories=no,resizable=no,titlebar=no');
 	});
 	
+	//Cheque Xtralinea
+	//************************************************************
+	$("#iborrar3").click(function(){
+			$("input:text[name=nnombre]").val("");
+			$("input:text[name=nprestamo]").val("");
+			$("input:text[name=nfecha1]").val("");
+			$("input:text[name=nfecha2]").val("");
+			//Esto pertenece a Xtralinea
+			$("input:text[name=nvalor]").val("");
+			$('.ci').text("0.00");
+		});
+
 
 	// Efecto TABS
 	// ***********************************************************
 
 	$('#efec').hide();
+	$('#chxtra').hide();
 	$('#tab2').css({'background': '#ED001D'});
+	$('#tab3').css({'background': '#C80006'});
 
     $('#tab1').click(function(){
-        $('#efec').fadeOut(function(){
+        $('#efec, #chxtra').fadeOut(function(){
             $('#tab1').css({'background': '#CCCCCC'});
             $('#tab2').css({'background': '#ED001D'});
+            $('#tab3').css({'background': '#C80006'});
             $('#xtra').fadeIn("slow");
         });    
     });
 
     $('#tab2').click(function(){
-        $('#xtra').fadeOut(function() {
-            $('#tab2').css({'background': '#CCCCCC'});
-            $('#efec').fadeIn("slow");
+        $('#xtra, #chxtra').fadeOut(function() {
             $('#tab1').css({'background': '#ED001D'});
+            $('#tab2').css({'background': '#CCCCCC'});
+            $('#tab3').css({'background': '#C80006'});
+            $('#efec').fadeIn("slow");
         });                   
-    });     
+    });
+    $('#tab3').click(function(){
+        $('#xtra, #efec').fadeOut(function() {
+            $('#tab1').css({'background': '#ED001D'});
+            $('#tab2').css({'background': '#C80006'});
+            $('#tab3').css({'background': '#CCCCCC'});
+            $('#chxtra').fadeIn("slow");
+        });                   
+    });      
 });
 
 

@@ -11,6 +11,7 @@
 
 	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="./css/factor.css">
+	<link rel="stylesheet" type="text/css" href="./css/print.css" media="print">
 
 </head>
 
@@ -22,6 +23,7 @@
 		<ul id="pestanas">
 			<li id="tab1"><a href="#xtra">X-tralinea</a></li>
 			<li id="tab2"><a href="#efec">Tc Efectivo</a></li>
+			<li id="tab3"><a href="#chxtra">Cheq-Xtralinea</a></li>
 		</ul>
 		
 		<div class="ventanas">
@@ -60,7 +62,7 @@
 					<button type="button" value="vcalcular" id="icalcular">Calcular</button>
 					<button type="button" value="borrar" id="iborrar">Borrar</button>
 					
-					<p id="ci">0.00</p>
+					<p class="ci">0.00</p>
 			</div>
 			<div class="efec" id="efec" >
 					<p class="c">Cuotas</p>
@@ -88,6 +90,20 @@
 					<button type="button" value="borrar" id="iborrar2">Borrar</button>
 					
 					<p id="ci2">0.00</p>
+			</div>
+			<div class="chxtra" id="chxtra" >
+					<p class="ci">0.00</p>
+					<p class="v">Beneficiaro(a)</p>
+					<input type="text" name="nnombre" value="" class="inombre" placeholder="Ingresa Nombre">
+
+					<p class="c">Monto S/.</p>
+					<input type="text" name="nprestamo" value="" class="iprestamo" placeholder="0">
+					<p class="f">Fecha</p>
+					<input type="text" name="nfecha1" value="" class="ifecha1" placeholder="00/00/00">
+					<p class="entre">a</p>
+					<input type="text" name="nfecha2" value="" class="ifecha2" placeholder="00/00/00">
+					<button type="button" value="imprimir" id="print">Imprimir</button>
+					<button type="button" value="borrar" id="iborrar3">Borrar</button>
 			</div>
 		</div>
 	</div>

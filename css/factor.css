@@ -99,20 +99,51 @@ ul#pestanas li a{
   top: 90px;
   left: 40px;
 }
+.inombre{
+  height:31px; 
+  width:240px; 
+  position: absolute;
+  top: 50px;
+  left: 40px;
 
+}
+
+.iprestamo {
+  width: 104px;
+  height: 26px;
+  position: absolute;
+  top: 130px;
+  left: 40px;
+}
+.ifecha1 {
+  width: 80px;
+  height: 26px;
+  position: absolute;
+  font-size: 18px !important;
+  top: 200px;
+  left: 40px;
+}
+.ifecha2 {
+  width: 80px;
+  height: 26px;
+  position: absolute;
+  font-size: 18px !important;
+  top: 200px;
+  left: 160px;
+}
 .vcuota {
   width: 104px;
   height: 26px;
   position: absolute;
   top: 40px;
   left: 290px;
-
 }
-.contenedor #icalcular, #icalcular2{
+
+.contenedor #icalcular, #icalcular2, #print{
   top: 160px;
   left: 290px;
 }
-.contenedor #iborrar, #iborrar2{
+.contenedor #iborrar, #iborrar2, #iborrar3{
   top:210px;
   left: 290px;
 }
@@ -152,13 +183,46 @@ ul#pestanas li a{
   font-weight: bold;
 
 }
+#chxtra .c {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+
+}
+#chxtra .f {
+  position: absolute;
+  top: 180px;
+  left: 40px;
+
+}
+#chxtra .v {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  font-size: 22px;
+  font-weight: bold;
+
+}
+#chxtra .entre {
+  position: absolute;
+  top: 206px;
+  left: 138px;
+
+}
+#chxtra .ci {
+  top: 100px;
+  left: 260px;
+  width: 160px;
+  font-size: 38px;
+
+}
 .contenedor #interes , #tc {
   position: absolute;
   top: 100px;
   left: 290px;
 
 }
-.contenedor #ci, #ci2{
+.contenedor .ci, #ci2{
   position: absolute;
   color: #000000;
   font-size: 60px;
