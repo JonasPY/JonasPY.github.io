@@ -27,9 +27,13 @@ $(document).on('ready', function(){ //cuando el documento este listo
 		var posicion = tea[x][y];
 		var valor = z * posicion;
 		$('.ci').text(valor.toFixed(2));
+		$('.iprestamo').text(z);
+		return;
 	}
 
-	$("#icalcular").click(function() { valor(); return false; });	
+	$("#icalcular").click(function(){
+		valor();
+	});	
 
 	$("#iborrar").click(function(){
 		$('.ci').text("0.00");

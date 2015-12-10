@@ -1,0 +1,26 @@
+@page  
+{ 
+    size: auto; 
+    margin: 0mm;  
+}
+
+@media print {
+    #tab1, #tab2, #tab3, .v , .c , .f{
+        display: none;
+    }
+    figure, button{
+        display: none;
+    }
+
+    input {
+        border: none;
+    }
+    .ventanas {
+        margin:0 !important;
+        padding: 0 !important;
+        border: 1px solid black;
+        top: 0 !important;
+        left: 0 !important;
+        width: 10cm !important;
+    }
+}
