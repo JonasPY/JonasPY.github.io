@@ -86,19 +86,6 @@ $(document).on('ready', function(){ //cuando el documento este listo
 		window.open('factor.html','_blank','width=450,height=410,menubar=no,scrollbars=no,toolbar=no,location=no,directories=no,resizable=no,titlebar=no');
 	});
 	
-	//Cheque Xtralinea
-	//************************************************************
-	$("#iborrar3").click(function(){
-			$("input:text[name=nnombre]").val("");
-			$("input:text[name=nprestamo]").val("");
-			$("input:text[name=nfecha1]").val("");
-			$("input:text[name=nfecha2]").val("");
-			//Esto pertenece a Xtralinea
-			$("input:text[name=nvalor]").val("");
-			$('.ci').text("0.00");
-		});
-
-
 	// Efecto TABS
 	// ***********************************************************
 
@@ -133,7 +120,6 @@ $(document).on('ready', function(){ //cuando el documento este listo
         });                   
     });      
 });
-
 
 
 
